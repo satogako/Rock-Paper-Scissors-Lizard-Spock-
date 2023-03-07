@@ -1,3 +1,17 @@
+document.addEventListener('DOMContentLoaded', function() {
+
+    let buttons = document.getElementsByTagName('button');
+
+    for (let button of buttons) {
+        button.addEventListener('click', function() {
+            let userChoise = this.getAttribute('data-type');
+            alert(`You press batton "${userChoise}"!`);
+            runGame(userChoise);
+        });
+    }
+
+})
+
 function runGame() {
 
 }
