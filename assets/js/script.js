@@ -26,15 +26,15 @@ function runGame(userChoise) {
     let imageName;
 
     if (userChoise === 'rock') {
-        imageName = 'rock.png'
+        imageName = 'rock'
     } else if (userChoise === 'paper') {
-        imageName = 'paper.png'
+        imageName = 'paper'
     } else if (userChoise === 'scissors') {
-        imageName = 'scissors.png'
+        imageName = 'scissors'
     } else if (userChoise === 'lizard') {
-        imageName = 'lizard.png'
+        imageName = 'lizard'
     } else if (userChoise === 'spock') {
-        imageName = 'spock.png'
+        imageName = 'spock'
     }
 
     displayOppoPlayer(imageName);
@@ -60,7 +60,8 @@ function calculateCorrectAnswer() {
 function displayOppoPlayer(imageName) {
 
     document.getElementById('vs-image').src = 'assets/images/vs.png';
-    document.getElementById('player-oppo').src = 'assets/images/' + imageName;
+    document.getElementById('player-oppo').src = `assets/images/${imageName}.png`;
+    document.getElementById('player-oppo').alt = `In the image of the ${imageName} chosen by the user`;
     
 }
 
