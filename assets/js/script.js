@@ -46,11 +46,34 @@ function showResult() {
 
 }
 
+/**
+ * Gets a random number, assigns the name of the 
+ * corresponding image and passes it to the 
+ * function displayOppoComputer
+ */
 function computerChoise() {
+
+    let randomNumber = Math.floor(Math.random() * 5);
+    let imageNamePc;
+
+    if (randomNumber === 0) {
+        imageNamePc = 'rock';
+    } else if (randomNumber === 1) {
+        imageNamePc = 'paper';
+    } else if (randomNumber === 2) {
+        imageNamePc = 'scissors';
+    } else if (randomNumber === 3) {
+        imageNamePc = 'lizard';
+    } else if (randomNumber === 4) {
+        imageNamePc = 'spock';
+    }
+
+    displayOppoComputer(imageNamePc);
 
 }
 
 function calculateCorrectAnswer() {
+
 
 }
 
@@ -67,5 +90,6 @@ function displayOppoPlayer(imageName) {
 
 function displayOppoComputer() {
 
+    
 }
 
