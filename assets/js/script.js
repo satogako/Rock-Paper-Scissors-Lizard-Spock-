@@ -54,8 +54,13 @@ function calculateCorrectAnswer() {
 
 }
 
+/**
+ * Gets the name of the image and sets the path to it.
+ */
 function displayOppoPlayer(imageName) {
 
+    document.getElementById('vs-image').src = 'assets/images/vs.png';
+    document.getElementById('player-oppo').src = 'assets/images/' + imageName;
     
 }
 
