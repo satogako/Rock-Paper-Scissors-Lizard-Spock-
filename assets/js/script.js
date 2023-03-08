@@ -88,8 +88,17 @@ function displayOppoPlayer(imageName) {
     
 }
 
-function displayOppoComputer() {
+/**
+ * 
+ * Gets the name of the image from function computerChoise
+ * and sets the path to it.
+ * Starts the function calculateCorrectAnswer.
+ */
+function displayOppoComputer(imageNamePc) {
 
+    document.getElementById('computer-oppo').src = `assets/images/${imageNamePc}.png`;
+    document.getElementById('computer-oppo').alt = `In the image of the ${imageNamePc} chosen by the computer`;
     
+    calculateCorrectAnswer();
 }
 
