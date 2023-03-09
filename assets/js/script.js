@@ -1,6 +1,7 @@
 /**
  * Wait for the DOM to finish loading before runing the game
- * Get the button elements and add event listeners to them
+ * Get the button elements and add event listeners to them.
+ * The listener code was borrowed from Love Math.
  */
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -9,7 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
     for (let button of buttons) {
         button.addEventListener('click', function() {
             let userChoise = this.getAttribute('data-type');
-            displayOppoPlayer(userChoise);
+
+            if(userChoise === 'reset') {
+                gameReset();
+            } else {
+                displayOppoPlayer(userChoise);
+            } 
         });
     }
 
@@ -145,4 +151,6 @@ function computerScore() {
     }
         
 }
+
+
 
