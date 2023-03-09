@@ -85,7 +85,7 @@ function calculateCorrectAnswer(userChoise) {
             showResult(result);
             playerScore();
     } else if (userChoise === systemChoise) {
-            result = 'Nobody Won! A Draw!';
+            result = "Nobody Won! It's Draw!";
             showResult(result);
     } else {
             result = 'Computer Won!';
