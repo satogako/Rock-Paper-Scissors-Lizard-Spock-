@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
             } 
         });
     }
-})
+});
 
 /**
  * Display a message about the winner on the page.
@@ -100,7 +100,7 @@ function calculateCorrectAnswer(userChoise) {
  */
 function displayOppoPlayer(imageName) {
 
-    document.getElementById('vs-image').src = ''
+    document.getElementById('vs-image').src = '';
 
     setTimeout(vsImage, 500);
     function vsImage() {
@@ -129,7 +129,7 @@ function displayOppoComputer(imageNamePc) {
  */
 function playerScore() {
 
-    oldScore = parseInt(document.getElementById('player-score').innerText);
+    let oldScore = parseInt(document.getElementById('player-score').innerText);
 
     setTimeout(score, 1000);
     function score () {
@@ -144,7 +144,7 @@ function playerScore() {
  */
 function computerScore() {
 
-    oldScore = parseInt(document.getElementById('computer-score').innerText);
+    let oldScore = parseInt(document.getElementById('computer-score').innerText);
 
     setTimeout(score, 1000);
     function score() {
@@ -160,6 +160,6 @@ function gameReset() {
     document.getElementById('vs-image').src = '';
     document.getElementById('computer-score').innerText = '0';
     document.getElementById('player-score').innerText = '0';
-    document.getElementById('answer-text').innerText = ''
+    document.getElementById('answer-text').innerText = '';
 }
 
