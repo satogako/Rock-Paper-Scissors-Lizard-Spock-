@@ -114,4 +114,35 @@ function displayOppoComputer(imageNamePc) {
     document.getElementById('computer-oppo').alt = `In the image of the ${imageNamePc} chosen by the computer`; 
 }
 
+/**
+ * Gets the current score from the DOM and increments it by 1.
+ * The timer code was taken on the page 
+ * https://www.w3schools.com/jsref/met_win_settimeout.asp
+ */
+function playerScore() {
+
+    oldScore = parseInt(document.getElementById('player-score').innerText);
+
+    setTimeout(score, 500);
+    function score () {
+        document.getElementById('player-score').innerText = ++ oldScore;
+    }
+    
+}
+
+/**
+ * Gets the current score from the DOM and increments it by 1.
+ * The timer code was taken on the page 
+ * https://www.w3schools.com/jsref/met_win_settimeout.asp
+ */
+function computerScore() {
+
+    oldScore = parseInt(document.getElementById('computer-score').innerText);
+
+    setTimeout(score, 500);
+    function score() {
+        document.getElementById('computer-score').innerText = ++ oldScore;
+    }
+        
+}
 
