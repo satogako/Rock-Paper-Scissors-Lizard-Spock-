@@ -15,8 +15,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 })
 
-function showResult() {
+/**
+ * Display a message about the winner on the page.
+ * The timer code was taken on the page 
+ * https://www.w3schools.com/jsref/met_win_settimeout.asp
+ */
+function showResult(result) {
 
+    document.getElementById('answer-text').innerText = '';
+    
+    setTimeout(showMessage, 500);
+    function showMessage() {
+        document.getElementById('answer-text').innerText = result;
+    }
     
 }
 
@@ -66,14 +77,16 @@ function calculateCorrectAnswer(userChoise) {
         userChoise === 'paper' && systemChoise === 'spock' ||
         userChoise === 'spock' && systemChoise === 'rock' ||
         userChoise === 'rock' && systemChoise === 'scissors') {
-            result = 'User Won!';
+            result = 'Player Won!';
             showResult(result);
+            playerScore();
     } else if (userChoise === systemChoise) {
             result = 'Nobody Won! A Draw!';
             showResult(result);
     } else {
             result = 'Computer Won!';
             showResult(result);
+            computerScore();
     }
   
 }
@@ -100,4 +113,5 @@ function displayOppoComputer(imageNamePc) {
     document.getElementById('computer-oppo').src = `assets/images/${imageNamePc}.png`;
     document.getElementById('computer-oppo').alt = `In the image of the ${imageNamePc} chosen by the computer`; 
 }
+
 
