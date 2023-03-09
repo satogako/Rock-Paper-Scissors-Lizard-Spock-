@@ -9,38 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
     for (let button of buttons) {
         button.addEventListener('click', function() {
             let userChoise = this.getAttribute('data-type');
-            runGame(userChoise);
+            displayOppoPlayer(userChoise);
         });
     }
 
 })
-
-/**
- * Receives a data-type from the event listener,
- * determines the name of the image and passes it to
- * function displayOppoPlayer.
- * Starts the function computerChoise.
- */
-function runGame(userChoise) {
-
-    let imageName;
-
-    if (userChoise === 'rock') {
-        imageName = 'rock'
-    } else if (userChoise === 'paper') {
-        imageName = 'paper'
-    } else if (userChoise === 'scissors') {
-        imageName = 'scissors'
-    } else if (userChoise === 'lizard') {
-        imageName = 'lizard'
-    } else if (userChoise === 'spock') {
-        imageName = 'spock'
-    }
-
-    displayOppoPlayer(imageName);
-    computerChoise();
-
-}
 
 function showResult() {
 
@@ -69,16 +42,17 @@ function computerChoise() {
     }
 
     displayOppoComputer(imageNamePc);
-
+    return imageNamePc;
 }
 
 function calculateCorrectAnswer() {
 
-
+  
 }
 
 /**
  * Gets the name of the image and sets the path to it.
+ * Starts the function calculateCorrectAnswer.
  */
 function displayOppoPlayer(imageName) {
 
@@ -86,19 +60,16 @@ function displayOppoPlayer(imageName) {
     document.getElementById('player-oppo').src = `assets/images/${imageName}.png`;
     document.getElementById('player-oppo').alt = `In the image of the ${imageName} chosen by the user`;
     
+    calculateCorrectAnswer(imageName);
 }
 
 /**
- * 
  * Gets the name of the image from function computerChoise
- * and sets the path to it.
- * Starts the function calculateCorrectAnswer.
+ * and sets the path to image.
  */
 function displayOppoComputer(imageNamePc) {
 
     document.getElementById('computer-oppo').src = `assets/images/${imageNamePc}.png`;
-    document.getElementById('computer-oppo').alt = `In the image of the ${imageNamePc} chosen by the computer`;
-    
-    calculateCorrectAnswer();
+    document.getElementById('computer-oppo').alt = `In the image of the ${imageNamePc} chosen by the computer`; 
 }
 
