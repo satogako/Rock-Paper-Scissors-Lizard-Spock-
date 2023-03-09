@@ -152,5 +152,15 @@ function computerScore() {
         
 }
 
+/**
+ * Erases game messages and scores.
+ */
+function gameReset() {
 
+    document.getElementById('vs-image').src = '';
+    document.getElementById('computer-score').innerText = '0';
+    document.getElementById('player-score').innerText = '0';
+    document.getElementById('answer-text').innerText = ''
+
+}
 
