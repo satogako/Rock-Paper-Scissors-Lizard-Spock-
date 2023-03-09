@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
             } 
         });
     }
-
 })
 
 /**
@@ -30,11 +29,10 @@ function showResult(result) {
 
     document.getElementById('answer-text').innerText = '';
     
-    setTimeout(showMessage, 500);
+    setTimeout(showMessage, 1000);
     function showMessage() {
         document.getElementById('answer-text').innerText = result;
-    }
-    
+    }   
 }
 
 /**
@@ -93,8 +91,7 @@ function calculateCorrectAnswer(userChoise) {
             result = 'Computer Won!';
             showResult(result);
             computerScore();
-    }
-  
+    } 
 }
 
 /**
@@ -103,7 +100,12 @@ function calculateCorrectAnswer(userChoise) {
  */
 function displayOppoPlayer(imageName) {
 
-    document.getElementById('vs-image').src = 'assets/images/vs.png';
+    document.getElementById('vs-image').src = ''
+
+    setTimeout(vsImage, 500);
+    function vsImage() {
+        document.getElementById('vs-image').src = 'assets/images/vs.png';
+    }
     document.getElementById('player-oppo').src = `assets/images/${imageName}.png`;
     document.getElementById('player-oppo').alt = `In the image of the ${imageName} chosen by the user`;
     
@@ -129,11 +131,10 @@ function playerScore() {
 
     oldScore = parseInt(document.getElementById('player-score').innerText);
 
-    setTimeout(score, 500);
+    setTimeout(score, 1000);
     function score () {
         document.getElementById('player-score').innerText = ++ oldScore;
-    }
-    
+    }  
 }
 
 /**
@@ -145,15 +146,14 @@ function computerScore() {
 
     oldScore = parseInt(document.getElementById('computer-score').innerText);
 
-    setTimeout(score, 500);
+    setTimeout(score, 1000);
     function score() {
         document.getElementById('computer-score').innerText = ++ oldScore;
-    }
-        
+    }     
 }
 
 /**
- * Erases game messages and scores.
+ * Erases game message and scores.
  */
 function gameReset() {
 
@@ -161,6 +161,5 @@ function gameReset() {
     document.getElementById('computer-score').innerText = '0';
     document.getElementById('player-score').innerText = '0';
     document.getElementById('answer-text').innerText = ''
-
 }
 
