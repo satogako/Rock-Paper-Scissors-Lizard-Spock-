@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function showResult() {
 
+    
 }
 
 /**
@@ -45,8 +46,35 @@ function computerChoise() {
     return imageNamePc;
 }
 
-function calculateCorrectAnswer() {
+/**
+ * Determines the winner and passes the value 
+ * to the function showResult.
+ * Starts counting functions.
+ */
+function calculateCorrectAnswer(userChoise) {
 
+    let systemChoise = computerChoise(); 
+    let result;
+ 
+    if (userChoise === 'scissors' && systemChoise === 'paper' ||
+        userChoise === 'paper' && systemChoise === 'rock' ||
+        userChoise === 'rock' && systemChoise === 'lizard' ||
+        userChoise === 'lizard' && systemChoise === 'spock' ||
+        userChoise === 'spock' && systemChoise === 'scissors' ||
+        userChoise === 'scissors' && systemChoise === 'lizard' ||
+        userChoise === 'lizard' && systemChoise === 'paper' ||
+        userChoise === 'paper' && systemChoise === 'spock' ||
+        userChoise === 'spock' && systemChoise === 'rock' ||
+        userChoise === 'rock' && systemChoise === 'scissors') {
+            result = 'User Won!';
+            showResult(result);
+    } else if (userChoise === systemChoise) {
+            result = 'Nobody Won! A Draw!';
+            showResult(result);
+    } else {
+            result = 'Computer Won!';
+            showResult(result);
+    }
   
 }
 
