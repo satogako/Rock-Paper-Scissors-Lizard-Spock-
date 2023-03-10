@@ -7,6 +7,7 @@
 
     <!--font awesome and googlr fonts-->
     <script src="https://kit.fontawesome.com/4098b4a9a9.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!--favicon link shortcut icon-->
@@ -15,16 +16,22 @@
     <title>Rock, Paper, Scissors, Lizard, Spock</title>
 </head>
 <body>
-    <section>
-        <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
+    <section> 
+        <h1 aria-label="Rock, Paper, Scissors, Lizard, Spock">
+            R<i class="fa-solid fa-hand-back-fist"></i>ck, 
+            Pap<i class="fa-solid fa-hand"></i>r, 
+            S<i class="fa-solid fa-hand-scissors"></i>issors, 
+            Liza<i class="fa-solid fa-hand-lizard"></i>d, 
+            Sp<i class="fa-solid fa-hand-spock"></i>ck
+        </h1>
         <div class="game-area">
-            <h2>Make a choice</h2>
+            <h2>Make a choice:</h2>
             <div class="controls-area">
-                <button aria-label="rock" data-type="rock"></button>
-                <button aria-label="paper" data-type="paper"></button>
-                <button aria-label="scissors" data-type="scissors"></button>
-                <button aria-label="lizard" data-type="lizard"></button>
-                <button aria-label="spock" data-type="spock"></button>
+                <button aria-label="rock" data-type="rock"><i class="fa-solid fa-hand-back-fist"></i></button>
+                <button aria-label="paper" data-type="paper"><i class="fa-solid fa-hand"></i></button>
+                <button aria-label="scissors" data-type="scissors"><i class="fa-solid fa-hand-scissors"></i></button>
+                <button aria-label="lizard" data-type="lizard"><i class="fa-solid fa-hand-lizard"></i></button>
+                <button aria-label="spock" data-type="spock"><i class="fa-solid fa-hand-spock"></i></button>
             </div>
             <div class="answer-message">
                 <h2 id="answer-text">Player Wins!</h2>
