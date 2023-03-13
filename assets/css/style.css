@@ -1,9 +1,169 @@
   /*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap');*/
 
-  body {
-    background-color: gainsboro;
+body {
+    font-family: 'Montserrat', sans-serif; 
+    text-align: center;
+    background-color: #e1e1e1;
+    font-size: 16px;
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;;
+    text-transform: uppercase;
+    font-size: 2em;
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+h1 span {
+    margin: 5px;
+}
+
+h1 i {
+    font-size: 0.75em;
+}
+
+.rock {
+    color: /*#152942*/#19223b;
+    border: 4px solid #e1e1e1;
+    border-radius: 25%;
+}
+
+.paper {
+    /*font-size: 2.3rem;*/
+    color: /*#D2C212*/#d5c521;
+    border-top: 4px solid #e1e1e1;
+    border-left: 4px solid #e1e1e1;
+    border-bottom: 4px solid #e1e1e1;
+    border-radius: 25%;
+}
+
+.scissors {
+    /*font-size: 2.3rem;*/
+    color: /*#3e96a2*//*#3e96a2;*/#ff0000;
+    border-top: 4px solid #e1e1e1;
+    border-left: 4px solid #e1e1e1;
+    border-bottom: 4px solid #e1e1e1;
+    border-radius: 25%;
+}
+
+.lizard {
+    /*font-size: 2.3rem;*/
+    color: /*#47d613*/#46d525;
+    border-top: 4px solid #e1e1e1;
+    border-left: 4px solid #e1e1e1;
+    border-radius: 25%;
+}
+
+.spock {
+    /*font-size: 2.3rem;*/
+    color: /*#0000ff*/#2835f1;
+    border: 4px solid #e1e1e1;
+    border-radius: 25%;
+}
+
+.game-area {                       /*Видалити*/
+    /*border: 4px solid #6787c2*/
+    border-radius: 3%;
+    width: 65%;
+    height: 95%;
+    /*background-color: #e6ecf0;*/
+    margin: 0 auto;
+
+}
+
+.game-area h2 {
+    font-size: 1.05em;
+}
+
+.btn {
+    margin: 10px;
+    /*width: 85px;
+    height: 85px;
+    border-radius: 25%;*/
+    width: 11vmin;
+    height: 11vmin;
+    border-radius: 25%;
+} 
+
+button i {
+    /*font-size: 2.8em;*/
+    font-size: 5.7vmin;
+}
+
+.btn-rock-color {
+    border: 1.2vmin solid #19223b;
+    background-color: white;
+}
+
+.btn-paper-color {
+    border: 1.2vmin solid #D5C521;
+    background-color: white;
+}
+
+.btn-scissors-color {
+    border: 1.2vmin solid #ff0000;
+    background-color: white;
+}
+
+.btn-lizard-color {
+    border: 1.2vmin solid #46d525;
+    background-color: white;
+}
+
+.btn-spock-color {
+    border: 1.2vmin solid #2835f1;
+    background-color: white;
+}
+
+.btn-rock-color:hover {
+    background-color: #19223bdb;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-paper-color:hover {
+    background-color: #b0a41c;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-scissors-color:hover {
+    background-color: #d60000;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-lizard-color:hover {
+    background-color: #3ab21f;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-spock-color:hover {
+    background-color: #0e1ce1;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.answer-message {
+    font-size: 1.3em;
+    font-weight: bolder;
+    color:#180101;
+    background-color: #3ab21f;
+    height: 4vmin;
+    width: 42vmin;  
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #051937;
+    margin: 0 auto;
+    width: 65%;
 }

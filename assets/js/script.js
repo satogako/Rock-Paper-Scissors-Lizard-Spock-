@@ -8,6 +8,23 @@ document.addEventListener('DOMContentLoaded', function() {
     let buttons = document.getElementsByTagName('button');
 
     for (let button of buttons) {
+        button.addEventListener('mouseover', function() {
+            let buttonHover = this.getAttribute('data-type');
+
+            if (buttonHover === 'rock') {
+                rockBorderFontAwesome();
+            } else if (buttonHover === 'paper') {
+                paperBorderFontAwesome();
+            } else if (buttonHover === 'scissors') {
+                scissorsBorderFontAwesome();
+            } else if (buttonHover === 'lizard') {
+                lizardBorderFontAwesome();
+            } else if (buttonHover === 'spock') {
+                spockBorderFontAwesome();
+            }
+        });
+
+        button.addEventListener('mouseout', withOutBorderFontAwesome);
         button.addEventListener('click', function() {
             let userChoise = this.getAttribute('data-type');
 
@@ -163,3 +180,76 @@ function gameReset() {
     document.getElementById('answer-text').innerText = '';
 }
 
+function rockBorderFontAwesome() {
+    let rockFontAwesome = document.getElementsByTagName('h1')[0].children[0].children[0];
+
+    rockFontAwesome.style.border = '4px solid black';
+    rockFontAwesome.style.borderRadius = "25%";
+    rockFontAwesome.style.transition = '0.5s';
+};
+
+function paperBorderFontAwesome() {
+    let paperFontAwesome = document.getElementsByTagName('h1')[0].children[1].children[0];
+
+    paperFontAwesome.style.borderTop = '4px solid black';
+    paperFontAwesome.style.borderLeft = '4px solid black';
+    paperFontAwesome.style.borderBottom = '4px solid black';
+    paperFontAwesome.style.borderRadius = '25%';
+    paperFontAwesome.style.transition = '0.5s';
+}
+
+function scissorsBorderFontAwesome() {
+    let scissorsFontAwesom = document.getElementsByTagName('h1')[0].children[2].children[0];
+
+    scissorsFontAwesom.style.borderTop = '4px solid black';
+    scissorsFontAwesom.style.borderLeft = '4px solid black';
+    scissorsFontAwesom.style.borderBottom = '4px solid black';
+    scissorsFontAwesom.style.borderRadius = '25%';
+    scissorsFontAwesom.style.transition = '0.5s';
+}
+
+function lizardBorderFontAwesome() {
+    let lizardFontAwesome = document.getElementsByTagName('h1')[0].children[3].children[0];
+
+    lizardFontAwesome.style.borderLeft = '4px solid black';
+    lizardFontAwesome.style.borderTop = '4px solid black';
+    lizardFontAwesome.style.borderRadius = '25%';
+    lizardFontAwesome.style.transition = '0.5s';
+}
+
+function spockBorderFontAwesome() {
+    let spockFontAwesome = document.getElementsByTagName('h1')[0].children[4].children[0];
+
+    spockFontAwesome.style.border = '4px solid black';
+    spockFontAwesome.style.borderRadius = '25%';
+    spockFontAwesome.style.transition = '0.5s';
+}
+
+function withOutBorderFontAwesome() {
+    
+    let rockFontAwesome = document.getElementsByTagName('h1')[0].children[0].children[0];
+    let paperFontAwesome = document.getElementsByTagName('h1')[0].children[1].children[0];
+    let scissorsFontAwesom = document.getElementsByTagName('h1')[0].children[2].children[0];
+    let lizardFontAwesome = document.getElementsByTagName('h1')[0].children[3].children[0];
+    let spockFontAwesome = document.getElementsByTagName('h1')[0].children[4].children[0];
+
+    rockFontAwesome.style.border = '4px solid #e1e1e1';
+    rockFontAwesome.style.borderRadius = "25%";
+
+    paperFontAwesome.style.borderTop = '4px solid #e1e1e1';
+    paperFontAwesome.style.borderLeft = '4px solid #e1e1e1';
+    paperFontAwesome.style.borderBottom = '4px solid #e1e1e1';
+    paperFontAwesome.style.borderRadius = '25%';
+
+    scissorsFontAwesom.style.borderTop = '4px solid #e1e1e1';
+    scissorsFontAwesom.style.borderLeft = '4px solid #e1e1e1';
+    scissorsFontAwesom.style.borderBottom = '4px solid #e1e1e1';
+    scissorsFontAwesom.style.borderRadius = '25%';
+
+    lizardFontAwesome.style.borderLeft = '4px solid #e1e1e1';
+    lizardFontAwesome.style.borderTop = '4px solid #e1e1e1';
+    lizardFontAwesome.style.borderRadius = '25%';
+
+    spockFontAwesome.style.border = '4px solid #e1e1e1';
+    spockFontAwesome.style.borderRadius = '25%';
+}
