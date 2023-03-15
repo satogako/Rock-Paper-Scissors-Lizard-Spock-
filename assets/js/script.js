@@ -224,5 +224,17 @@ function scissorsBorderFontAwesome() {
     scissorsFontAwesom.style.transition = '0.5s';
 }
 
+/**
+ * In the header h1, sets the border around the font awesome in the word lizard
+ */
+function lizardBorderFontAwesome() {
+    let lizardFontAwesome = document.getElementsByTagName('h1')[0].children[3].children[0];
+
+    lizardFontAwesome.style.borderLeft = '4px solid black';
+    lizardFontAwesome.style.borderTop = '4px solid black';
+    lizardFontAwesome.style.borderRadius = '25%';
+    lizardFontAwesome.style.transition = '0.5s';
+}
+
 
 
