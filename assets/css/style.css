@@ -212,3 +212,24 @@ button i {
   padding-left: 7px;
   color: #3ab21f;
 }
+
+/*-----Footer*/ 
+footer {
+  padding: 15px 0;
+  color: white;
+  background-color: #051937;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.rules {
+  margin:0 auto;
+  width: 4%;
+  text-align: center;
+}
+
+.rules:hover {
+  color:#46d525;
+  cursor: pointer;
+  transition: 0.5s;
+}
