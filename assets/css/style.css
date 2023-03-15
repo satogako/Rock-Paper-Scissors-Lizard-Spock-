@@ -173,3 +173,42 @@ button i {
 #player-oppo {
   width: 30vmin;
 }
+
+/*-----Game points section and game reset button*/
+.score-area {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1em;
+}
+
+.computer-scores {
+  font-weight: bold;
+  padding-left: 7px;
+  color: #d60000;
+}
+
+.btn-reset {
+  padding: 8px;
+  font-size: 0.9em;
+  width: 25vmin;
+  height: 7vmin;
+  background-color: #19223bdb;
+  letter-spacing: 1.5px;
+  color: white;
+  border: 1px transparent;
+  border-radius: 20px;
+  margin: 0 20px;
+}
+
+.btn-reset:hover {
+  color: #ff0000;
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: #19223b;
+}
+
+.player-scores {
+  font-weight: bold;
+  padding-left: 7px;
+  color: #3ab21f;
+}
