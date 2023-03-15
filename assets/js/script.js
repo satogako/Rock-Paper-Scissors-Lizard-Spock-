@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         button.addEventListener('mouseout', withOutBorderFontAwesome);
-        
+
         button.addEventListener('click', function() {
             let userChoise = this.getAttribute('data-type');
 
@@ -185,5 +185,16 @@ function gameReset() {
     document.getElementById('player-oppo').src = 'assets/images/preview.png';
     document.getElementById('player-oppo').alt = 'In the image together rock, paper, scissors, lizard, spock';
     
+}
+
+/**
+ * In the header h1, sets the border around the font awesome in the word rock
+ */
+function rockBorderFontAwesome() {
+    let rockFontAwesome = document.getElementsByTagName('h1')[0].children[0].children[0];
+
+    rockFontAwesome.style.border = '4px solid black';
+    rockFontAwesome.style.borderRadius = "25%";
+    rockFontAwesome.style.transition = '0.5s';
 }
 
