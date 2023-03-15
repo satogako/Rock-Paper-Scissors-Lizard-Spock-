@@ -8,6 +8,25 @@ document.addEventListener('DOMContentLoaded', function() {
     let buttons = document.getElementsByTagName('button');
 
     for (let button of buttons) {
+
+        button.addEventListener('mouseover', function() {
+            let buttonHover = this.getAttribute('data-type');
+
+            if (buttonHover === 'rock') {
+                rockBorderFontAwesome();
+            } else if (buttonHover === 'paper') {
+                paperBorderFontAwesome();
+            } else if (buttonHover === 'scissors') {
+                scissorsBorderFontAwesome();
+            } else if (buttonHover === 'lizard') {
+                lizardBorderFontAwesome();
+            } else if (buttonHover === 'spock') {
+                spockBorderFontAwesome();
+            }
+        });
+
+        button.addEventListener('mouseout', withOutBorderFontAwesome);
+        
         button.addEventListener('click', function() {
             let userChoise = this.getAttribute('data-type');
 
