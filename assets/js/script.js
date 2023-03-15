@@ -236,5 +236,16 @@ function lizardBorderFontAwesome() {
     lizardFontAwesome.style.transition = '0.5s';
 }
 
+/**
+ * In the header h1, sets the border around the font awesome in the word spock
+ */
+function spockBorderFontAwesome() {
+    let spockFontAwesome = document.getElementsByTagName('h1')[0].children[4].children[0];
+
+    spockFontAwesome.style.border = '4px solid black';
+    spockFontAwesome.style.borderRadius = '25%';
+    spockFontAwesome.style.transition = '0.5s';
+}
+
 
 
