@@ -247,5 +247,38 @@ function spockBorderFontAwesome() {
     spockFontAwesome.style.transition = '0.5s';
 }
 
+/**
+ * In the header h1, sets the border and color match background color page  
+ * around the font awesome in all words header. 
+ */
+function withOutBorderFontAwesome() {
+    
+    let rockFontAwesome = document.getElementsByTagName('h1')[0].children[0].children[0];
+    let paperFontAwesome = document.getElementsByTagName('h1')[0].children[1].children[0];
+    let scissorsFontAwesom = document.getElementsByTagName('h1')[0].children[2].children[0];
+    let lizardFontAwesome = document.getElementsByTagName('h1')[0].children[3].children[0];
+    let spockFontAwesome = document.getElementsByTagName('h1')[0].children[4].children[0];
+
+    rockFontAwesome.style.border = '4px solid #e1e1e1';
+    rockFontAwesome.style.borderRadius = "25%";
+
+    paperFontAwesome.style.borderTop = '4px solid #e1e1e1';
+    paperFontAwesome.style.borderLeft = '4px solid #e1e1e1';
+    paperFontAwesome.style.borderBottom = '4px solid #e1e1e1';
+    paperFontAwesome.style.borderRadius = '25%';
+
+    scissorsFontAwesom.style.borderTop = '4px solid #e1e1e1';
+    scissorsFontAwesom.style.borderLeft = '4px solid #e1e1e1';
+    scissorsFontAwesom.style.borderBottom = '4px solid #e1e1e1';
+    scissorsFontAwesom.style.borderRadius = '25%';
+
+    lizardFontAwesome.style.borderLeft = '4px solid #e1e1e1';
+    lizardFontAwesome.style.borderTop = '4px solid #e1e1e1';
+    lizardFontAwesome.style.borderRadius = '25%';
+
+    spockFontAwesome.style.border = '4px solid #e1e1e1';
+    spockFontAwesome.style.borderRadius = '25%';
+}
+
 
 
