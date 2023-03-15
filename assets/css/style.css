@@ -329,6 +329,10 @@ a:hover {
     font-size: 13px;
   }
 
+  .answer-message {
+    margin-bottom: 40px;
+  }
+
   .popup-content{
     width: 65%;
   }
@@ -340,8 +344,14 @@ a:hover {
 
 /*For medium screen size from 450px wide and down*/
 @media screen and (max-width: 450px) {
+  .answer-message {
+    font-size: 1em;
+  }
+
   .btn-reset {
     font-size: 0.8em;
     height: 45px;
   }
+
+  
 }
