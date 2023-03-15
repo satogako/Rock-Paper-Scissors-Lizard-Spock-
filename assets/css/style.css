@@ -322,3 +322,26 @@ a:hover {
   font-size: 280%;
   transition: 0.5s;
 }
+
+/*For medium screen size from 750px wide and down*/
+@media screen and (max-width: 750px) {
+  body {
+    font-size: 13px;
+  }
+
+  .popup-content{
+    width: 65%;
+  }
+
+  a:hover {
+    font-size: 5vmin;
+  }
+}
+
+/*For medium screen size from 450px wide and down*/
+@media screen and (max-width: 450px) {
+  .btn-reset {
+    font-size: 0.8em;
+    height: 45px;
+  }
+}
