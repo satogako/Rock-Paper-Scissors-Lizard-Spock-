@@ -153,3 +153,23 @@ button i {
   width: 42vmin;  
   margin: 0 auto;
 }
+
+/*-----Images section to display rivals*/
+.opponents {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+#computer-oppo {
+  width: 30vmin;
+}
+
+#vs-image {
+  width: 10vmin;
+  margin: 0 25px;
+}
+
+#player-oppo {
+  width: 30vmin;
+}
