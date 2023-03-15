@@ -153,7 +153,7 @@ function computerScore() {
 }
 
 /**
- * Erases game message and scores.
+ * Erases game message, scores and set preview images.
  */
 function gameReset() {
 
@@ -161,5 +161,10 @@ function gameReset() {
     document.getElementById('computer-score').innerText = '0';
     document.getElementById('player-score').innerText = '0';
     document.getElementById('answer-text').innerText = '';
+    document.getElementById('computer-oppo').src = 'assets/images/preview.png';
+    document.getElementById('computer-oppo').alt = 'In the image together rock, paper, scissors, lizard, spock'; 
+    document.getElementById('player-oppo').src = 'assets/images/preview.png';
+    document.getElementById('player-oppo').alt = 'In the image together rock, paper, scissors, lizard, spock';
+    
 }
 
