@@ -198,3 +198,16 @@ function rockBorderFontAwesome() {
     rockFontAwesome.style.transition = '0.5s';
 }
 
+/**
+ * In the header h1, sets the border around the font awesome in the word paper
+ */
+function paperBorderFontAwesome() {
+    let paperFontAwesome = document.getElementsByTagName('h1')[0].children[1].children[0];
+
+    paperFontAwesome.style.borderTop = '4px solid black';
+    paperFontAwesome.style.borderLeft = '4px solid black';
+    paperFontAwesome.style.borderBottom = '4px solid black';
+    paperFontAwesome.style.borderRadius = '25%';
+    paperFontAwesome.style.transition = '0.5s';
+}
+
