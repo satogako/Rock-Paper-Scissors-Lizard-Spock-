@@ -1,9 +1,145 @@
-  /*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap');*/
+/*-----General rules*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-  body {
-    background-color: #e1e1e1;
+body {
+  font-family: 'Montserrat', sans-serif; 
+  text-align: center;
+  background-color: #e1e1e1;
+  font-size: 16px;
 }
 
+/*-----Header h1*/
 h1 {
-    font-family: 'Montserrat', sans-serif;;
+  text-transform: uppercase;
+  font-size: 2em;
+  display: flex; 
+  justify-content: center;
+  flex-wrap: wrap; 
+  font-weight: 700;
+}
+
+h1 span {
+  margin: 5px;
+}
+
+h1 i {
+  font-size: 0.75em;
+}
+
+.rock {
+  color: #19223b;
+  border: 4px solid #e1e1e1;
+  border-radius: 25%;
+}
+
+.paper {
+  color: #d5c521;
+  border-top: 4px solid #e1e1e1;
+  border-left: 4px solid #e1e1e1;
+  border-bottom: 4px solid #e1e1e1;
+  border-radius: 25%;
+}
+
+.scissors {
+  color: #ff0000;
+  border-top: 4px solid #e1e1e1;
+  border-left: 4px solid #e1e1e1;
+  border-bottom: 4px solid #e1e1e1;
+  border-radius: 25%;
+}
+
+.lizard {
+  color: #46d525;
+  border-top: 4px solid #e1e1e1;
+  border-left: 4px solid #e1e1e1;
+  border-radius: 25%;
+}
+
+.spock {
+  color: #2835f1;
+  border: 4px solid #e1e1e1;
+  border-radius: 25%;
+}
+
+/*-----Buttons game-area section*/
+.game-area {                      
+  border-radius: 3%;
+  width: 65%;
+  height: 95%;
+  margin: 0 auto;
+}
+
+.game-area h2 {
+  font-size: 1.05em;
+}
+
+.btn {
+  margin: 10px;
+  width: 11vmin;
+  height: 11vmin;
+  border-radius: 25%;
+} 
+
+button i {
+  font-size: 5.7vmin;
+}
+
+.btn-rock-color {
+  border: 1.2vmin solid #19223b;
+  background-color: white;
+}
+
+.btn-paper-color {
+  border: 1.2vmin solid #D5C521;
+  background-color: white;
+}
+
+.btn-scissors-color {
+  border: 1.2vmin solid #ff0000;
+  background-color: white;
+}
+
+.btn-lizard-color {
+  border: 1.2vmin solid #46d525;
+  background-color: white;
+}
+
+.btn-spock-color {
+  border: 1.2vmin solid #2835f1;
+  background-color: white;
+}
+
+.btn-rock-color:hover {
+  background-color: #19223bdb;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btn-paper-color:hover {
+  background-color: #b0a41c;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btn-scissors-color:hover {
+  background-color: #d60000;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btn-lizard-color:hover {
+  background-color: #3ab21f;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btn-spock-color:hover {
+  background-color: #0e1ce1;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
 }
