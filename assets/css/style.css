@@ -143,3 +143,13 @@ button i {
   transition: 0.5s;
   cursor: pointer;
 }
+
+/*-----Message section for the outcome of the game*/
+.answer-message {
+  font-size: 1.3em;
+  font-weight: bolder;
+  color:#180101;
+  height: 4vmin;
+  width: 42vmin;  
+  margin: 0 auto;
+}
