@@ -211,3 +211,18 @@ function paperBorderFontAwesome() {
     paperFontAwesome.style.transition = '0.5s';
 }
 
+/**
+ * In the header h1, sets the border around the font awesome in the word scissors
+ */
+function scissorsBorderFontAwesome() {
+    let scissorsFontAwesom = document.getElementsByTagName('h1')[0].children[2].children[0];
+
+    scissorsFontAwesom.style.borderTop = '4px solid black';
+    scissorsFontAwesom.style.borderLeft = '4px solid black';
+    scissorsFontAwesom.style.borderBottom = '4px solid black';
+    scissorsFontAwesom.style.borderRadius = '25%';
+    scissorsFontAwesom.style.transition = '0.5s';
+}
+
+
+
