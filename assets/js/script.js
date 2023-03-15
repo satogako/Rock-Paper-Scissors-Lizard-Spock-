@@ -37,6 +37,34 @@ document.addEventListener('DOMContentLoaded', function() {
             } 
         });
     }
+
+    // The code listeners of pop-up window was taken from YouTube lesson
+    let popup = document.getElementById('mypopup'),
+    popupToggle = document.getElementById('rules'),
+    popupClose = document.querySelector('.close');
+
+    /**
+     * Displays a pop-up window when the mouse clicks on the Rules header
+     */
+    popupToggle.onclick = function() {
+      popup.style.display = 'block';
+    };
+
+    /**
+     * Closes the pop-up window when you click on the X icon.
+     */
+    popupClose.onclick = function() {
+      popup.style.display = 'none';
+    }
+
+    /**
+     * Closes the pop-up window when you click outside the pop-up.
+     */
+    window.onclick = function(event) {
+      if (event.target === popup) {
+        popup.style.display = 'none';
+      }
+    }  
 });
 
 /**
