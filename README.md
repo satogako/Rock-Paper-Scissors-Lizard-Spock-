@@ -59,7 +59,7 @@ It is an exciting and interactive game that people can play on their own. It wil
     - When the page is displayed in the browser with dark or night mode, then a gray rectangle becomes visible between the two opponents, and if it is removed, the html checker gives an error. JavaScript also uses this tag to display a vs.png image.
         ![gray rectangle](assets/images/gray_rectangle.jpg)
 
-    - This can be solved by rendering the image as a background using CSS.
+    - This can be solved by rendering a vs.png image that uses JavaScript as a background using CSS.
 
 
 ## Validator Testing
