@@ -9,7 +9,8 @@ It is an exciting and interactive game that people can play on their own. It wil
 ![screenshot responsive site](assets/images/responsive_page.jpg)
 
 
-# FEATURES
+## FEATURES
+---
 * HEADER
     - Featured at the top of the page, the header shows the game name: Rock, Paper, Scissors, Lizard, Spock in a font that is playful and clearly contrasts with the background.
     - This header clearly lells the user what game they are playing.
@@ -38,5 +39,18 @@ It is an exciting and interactive game that people can play on their own. It wil
     - The user can close the pop-up window by clicking on the "x" icon or by clicking anywhere outside the window.
 
         ![footer](assets/images/footer.jpg)
+
+
+## Testing
+---
+* I tested that this page works in different browsers: Chrome, Firefox, Opera.
+* I confirmed that this project is responsive, looks good and functions on all standard screen sizes using the
+    devtools device toolbar.
+* I confirmed that the game results are always correct.
+* I confirmed that the header, buttons and rules of game are all readable and easy to understand.
+* I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
+
+    ![lighthouse](assets/images/lighthouse.jpg)
+
 
 
