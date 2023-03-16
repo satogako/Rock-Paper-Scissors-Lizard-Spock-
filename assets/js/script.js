@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
      */
     popupClose.onclick = function() {
       popup.style.display = 'none';
-    }
+    };
 
     /**
      * Closes the pop-up window when you click outside the pop-up.
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (event.target === popup) {
         popup.style.display = 'none';
       }
-    }  
+    };  
 });
 
 /**

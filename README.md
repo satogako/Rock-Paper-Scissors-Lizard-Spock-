@@ -52,5 +52,55 @@ It is an exciting and interactive game that people can play on their own. It wil
 
     ![lighthouse](assets/images/lighthouse.jpg)
 
+## Bugs
+---
+* Unresolved bug
+    - If I had a little more time, I would have fixed the errors in some of the commits. I researched this problem and found that when  work in Gitpod for a long time, when writing a commit, letters are displayed with a delay. Solution of the problem - reloading the page.
+    - When the page is displayed in the browser with dark or night mode, then a gray rectangle becomes visible between the two opponents, and if it is removed, the html checker gives an error. JavaScript also uses this tag to display a vs.png image.
+        ![gray rectangle](assets/images/gray_rectangle.jpg)
+
+    - This can be solved by rendering the image as a background using CSS.
+
+
+## Validator Testing
+---
+* HTML
+    - No errors were returned when passing through the official W3C validator.
+        ![html checker](assets/images/html_cheker.jpg)
+* CSS 
+    - No errors were returned when passing through the official W3C validator.
+        ![css checker](assets/images/css_cheker.jpg)
+* JavaScript
+    - No errors were returned when passing through the JShint
+ validator, but there are two warnings about sematics. I was trying to generate code without variables in the global scope.
+        ![jshint cheker](assets/images/jshint_cheker.jpg)
+ 
+
+ ## Deployment
+---
+ * The site was deployed to GitHub pages. The steps to deploy are as follows:
+
+    - In the GitHub repository, navigate to the Settings tab
+
+    - From the left, in the Code and automation section, select Page
+
+    - From the source section drop-down menu, select the Master Branch
+
+    - Once the master branch has been selected, the page provided the link to the completed website.
+
+The live link can be found here - [Rock, Paper, Scissors, Lizard, Spock](https://satogako.github.io/Rock-Paper-Scissors-Lizard-Spock-/)
+
+
+## Credits
+---
+#### Content
+
+* The animation code and popup listeners were taken from YouTube tutorials.
+* The setTimeout() method in JavaScript was taken from the site [w3schools](https://www.w3schools.com/jsreF/met_win_settimeout.asp).
+
+#### Media
+
+* The images was taken from [pngwing.com](https://www.pngwing.com/).
+
 
 
